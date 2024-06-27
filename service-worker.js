@@ -1,13 +1,13 @@
 const CACHE_NAME = "auction-fee-calculator-v1";
 const urlsToCache = [
-  "/",
-  "/index.html",
-  "/styles.css",
-  "/script.js",
-  "/manifest.json",
-  "/icons/icon-192x192.png",
-  "/icons/icon-512x512.png",
-  "/copart_fees.json",
+  "./",
+  "./index.html",
+  "./styles.css",
+  "./script.js",
+  "./manifest.json",
+  "./icons/icon-192x192.png",
+  "./icons/icon-512x512.png",
+  "./copart_fees.json",
 ];
 
 self.addEventListener("install", (event) => {
