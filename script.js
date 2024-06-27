@@ -5,6 +5,16 @@ document.addEventListener("DOMContentLoaded", async () => {
   const bidInput = document.getElementById("auction-bid");
   const bidError = document.getElementById("bid-error");
   const totalImportFees = document.getElementById("total-import-fees");
+  const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+
+  const updateThemeColor = () => {
+    if (body.classList.contains("dark")) {
+      themeColorMeta.setAttribute("content", "#000000");
+    } else {
+      themeColorMeta.setAttribute("content", "#ffffff");
+    }
+  };
+
   themeToggle.addEventListener("click", () => {
     if (body.classList.contains("dark")) {
       body.classList.remove("dark");
@@ -13,6 +23,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       body.classList.add("dark");
       themeToggle.textContent = "☀️";
     }
+    updateThemeColor();
   });
 
   form.addEventListener("input", () => {
