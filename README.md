@@ -1,6 +1,4 @@
-Sure! Here's a README file for your Auction Fee Calculator PWA project:
 
-```markdown
 # Auction Fee Calculator PWA
 
 Auction Fee Calculator is a Progressive Web Application (PWA) that helps users calculate auction fees. The app can be installed on mobile devices and works offline.
@@ -150,7 +148,3 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 ## Contact
 
 For any questions or feedback, please contact [your-email@example.com](mailto:your-email@example.com).
-
-```
-
-Replace `https://github.com/your-username/auction-fee-calculator.git` with your actual GitHub repository URL, and update the contact email address as needed. This README provides an overview of the project, installation instructions, and details about the service worker and manifest.
