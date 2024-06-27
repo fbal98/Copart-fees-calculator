@@ -1,0 +1,212 @@
+[
+    {
+        "minBid": 0,
+        "maxBid": 999,
+        "fees": {
+            "auctionFee": 0,
+            "gateFee": 0,
+            "internetBidFee": 0,
+            "totalFee": 0
+        }
+    },
+    {
+        "minBid": 1000,
+        "maxBid": 1150,
+        "fees": {
+            "auctionFee": 325,
+            "gateFee": 69,
+            "internetBidFee": 79,
+            "totalFee": 473
+        }
+    },
+    {
+        "minBid": 1200,
+        "maxBid": 1250,
+        "fees": {
+            "auctionFee": 350,
+            "gateFee": 69,
+            "internetBidFee": 79,
+            "totalFee": 498
+        }
+    },
+    {
+        "minBid": 1300,
+        "maxBid": 1350,
+        "fees": {
+            "auctionFee": 365,
+            "gateFee": 69,
+            "internetBidFee": 79,
+            "totalFee": 513
+        }
+    },
+    {
+        "minBid": 1400,
+        "maxBid": 1450,
+        "fees": {
+            "auctionFee": 380,
+            "gateFee": 69,
+            "internetBidFee": 79,
+            "totalFee": 528
+        }
+    },
+    {
+        "minBid": 1500,
+        "maxBid": 1550,
+        "fees": {
+            "auctionFee": 390,
+            "gateFee": 79,
+            "internetBidFee": 79,
+            "totalFee": 548
+        }
+    },
+    {
+        "minBid": 1600,
+        "maxBid": 1650,
+        "fees": {
+            "auctionFee": 410,
+            "gateFee": 79,
+            "internetBidFee": 79,
+            "totalFee": 568
+        }
+    },
+    {
+        "minBid": 1700,
+        "maxBid": 1750,
+        "fees": {
+            "auctionFee": 420,
+            "gateFee": 79,
+            "internetBidFee": 79,
+            "totalFee": 578
+        }
+    },
+    {
+        "minBid": 1800,
+        "maxBid": 1950,
+        "fees": {
+            "auctionFee": 440,
+            "gateFee": 79,
+            "internetBidFee": 79,
+            "totalFee": 598
+        }
+    },
+    {
+        "minBid": 2000,
+        "maxBid": 2350,
+        "fees": {
+            "auctionFee": 470,
+            "gateFee": 89,
+            "internetBidFee": 79,
+            "totalFee": 638
+        }
+    },
+    {
+        "minBid": 2400,
+        "maxBid": 2450,
+        "fees": {
+            "auctionFee": 480,
+            "gateFee": 89,
+            "internetBidFee": 79,
+            "totalFee": 648
+        }
+    },
+    {
+        "minBid": 2500,
+        "maxBid": 2950,
+        "fees": {
+            "auctionFee": 500,
+            "gateFee": 89,
+            "internetBidFee": 79,
+            "totalFee": 668
+        }
+    },
+    {
+        "minBid": 3000,
+        "maxBid": 3450,
+        "fees": {
+            "auctionFee": 600,
+            "gateFee": 89,
+            "internetBidFee": 79,
+            "totalFee": 768
+        }
+    },
+    {
+        "minBid": 3500,
+        "maxBid": 3950,
+        "fees": {
+            "auctionFee": 650,
+            "gateFee": 89,
+            "internetBidFee": 79,
+            "totalFee": 818
+        }
+    },
+    {
+        "minBid": 4000,
+        "maxBid": 4450,
+        "fees": {
+            "auctionFee": 675,
+            "gateFee": 99,
+            "internetBidFee": 79,
+            "totalFee": 853
+        }
+    },
+    {
+        "minBid": 4500,
+        "maxBid": 4950,
+        "fees": {
+            "auctionFee": 700,
+            "gateFee": 99,
+            "internetBidFee": 79,
+            "totalFee": 878
+        }
+    },
+    {
+        "minBid": 5000,
+        "maxBid": 5900,
+        "fees": {
+            "auctionFee": 725,
+            "gateFee": 119,
+            "internetBidFee": 79,
+            "totalFee": 923
+        }
+    },
+    {
+        "minBid": 6000,
+        "maxBid": 7400,
+        "fees": {
+            "auctionFee": 750,
+            "gateFee": 119,
+            "internetBidFee": 79,
+            "totalFee": 948
+        }
+    },
+    {
+        "minBid": 7500,
+        "maxBid": 9900,
+        "fees": {
+            "auctionFee": 775,
+            "gateFee": 129,
+            "internetBidFee": 79,
+            "totalFee": 983
+        }
+    },
+    {
+        "minBid": 10000,
+        "maxBid": 14900,
+        "fees": {
+            "auctionFee": 800,
+            "gateFee": 129,
+            "internetBidFee": 79,
+            "totalFee": 1008
+        }
+    },
+    {
+        "minBid": 15000,
+        "maxBid": 9999999999999999,
+        "fees": {
+            "auctionFee": 800,
+            "gateFee": 129,
+            "internetBidFee": 79,
+            "totalFee": 1008
+        }
+    }
+]

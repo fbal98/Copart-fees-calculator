@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
+    />
+    <title>PWA Auction App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="/manifest.json" />
+  </head>
+  <body class="dark">
+    <div class="app-container">
+      <header>
+        <h1>Auction Fee Calculator</h1>
+        <div id="theme-toggle" class="theme-toggle">
+            ☀️
+        </div>
+      </header>
+      <main>
+        <div class="card">
+          <form id="auction-form">
+            <div class="form-group">
+                <!-- error -->
+                <label for="auction-bid">Auction Bid (USD):</label>
+                <div id="bidError" class="hidden">Error with bid</div>
+              <input
+                type="number"
+                id="auction-bid"
+                name="auction-bid"
+                required
+              />
+              
+            </div>
+            <div class="form-group">
+              <label for="shipping-price">Shipping Price (OMR):</label>
+              <input
+                type="number"
+                id="shipping-price"
+                name="shipping-price"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="currency-rate">Currency Rate (USD to OMR):</label>
+              <input
+                type="number"
+                id="currency-rate"
+                name="currency-rate"
+                value="0.386"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="american-car">American Car:</label>
+              <label class="switch">
+                <input type="checkbox" id="american-car" checked/>
+                <span class="slider round"></span>
+              </label>
+            </div>
+            <h2>Results (OMR)</h2>
+            <div class="result-group">
+                <div class="result-group horizontal">
+                    <div>
+                      <label>Tax</label>
+                      <div id="tax">0</div>
+                    </div>
+                    <div>
+                      <label>Customs</label>
+                      <div id="customs">0</div>
+                    </div>
+                    <div>
+                        <label>Total</label>
+                        <div id="total-import-fees">0</div>
+                      </div>
+                  </div>
+              <label>Copart Fee</label>
+              <div id="copart-fee">0</div>
+            </div>
+            
+            <div class="result-group">
+              <label>Final price</label>
+              <div id="final-price">0</div>
+              <div class="error-message" id="bid-error"></div>
+            </div>
+            
+          </form>
+        </div>
+      </main>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/service-worker.js").then(
+          (registration) => {
+            console.log(
+              "ServiceWorker registration successful with scope: ",
+              registration.scope
+            );
+          },
+          (error) => {
+            console.log("ServiceWorker registration failed: ", error);
+          }
+        );
+      }
+    </script>
+  </body>
+</html>

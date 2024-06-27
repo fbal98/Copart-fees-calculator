@@ -1,0 +1,230 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+    
+}
+
+:root {
+    --background-color: #f0f0f0;
+    --text-color: #333;
+    --primary-color: #bb86fc;
+    --secondary-color: #03dac6;
+    --error-color: #b00020;
+    --box-shadow-color: rgba(169, 168, 171, 0.5); /* Vibrant shadow color */
+    --input-background: #ffffff;
+    --input-border: #ccc;
+    --input-text-color: #333;
+    --button-background: #6200ea;
+    --button-text-color: #ffffff;
+    --button-hover-background: #3700b3;
+    --header-background: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+body.dark {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --primary-color: #bb86fc;
+    --secondary-color: #03dac6;
+    --error-color: #cf6679;
+    --box-shadow-color:  rgba(219, 190, 255, 0.5); /* Vibrant shadow color */
+    --input-background: #1f1f1f;
+    --input-border: #333333;
+    --input-text-color: #e0e0e0;
+    --button-background: #bb86fc;
+    --button-text-color: #ffffff;
+    --button-hover-background: #a657d6;
+    --header-background: #1f1f1f;
+    
+}
+
+.app-container {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: var(--background-color);
+    overflow: hidden;
+    
+}
+
+div .hidden {
+    display: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header-background);
+    padding: 15px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 25px;
+    color: var(--text-color);
+}
+
+.theme-toggle {
+    background: none;
+    z-index: 999;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+    line-height: 0;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.theme-toggle:active {
+    transform: rotate(360deg);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 9px;
+    height: 100%;
+
+}
+
+.card {
+    background-color: var(--input-background);
+    padding: 20px;
+    border-radius: 20px;
+    height: 80%;
+    margin: 30px 20px;
+    
+}
+
+.card.flat-top {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    
+}
+
+.card h2 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.form-group,
+.result-group {
+    margin-bottom: 20px;
+    
+}
+
+.result-group.horizontal{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.result-group.horizontal div{
+    width: 80%;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: var(--input-background);
+    border: 1px solid var(--input-border);
+    border-radius: 10px;
+    color: var(--input-text-color);
+}
+
+.error-message {
+    color: var(--error-color);
+    margin-top: 8px;
+    font-size: 14px;
+    display: none;
+    
+}
+
+.show {
+    display: unset;
+    animation: slide-in 0.3s ease-in-out;
+    
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#copart-fee,
+#final-price, 
+#customs,
+#tax,
+#total-import-fees {
+    padding: 10px;
+    background-color: var(--input-background);
+    border: 1px solid var(--input-border);
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--input-border);
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: var(--primary-color);
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}

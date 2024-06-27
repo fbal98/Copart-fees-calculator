@@ -1,0 +1,13 @@
+{
+    "name": "Auction Fee Calculator",
+    "short_name": "AuctionCalc",
+    "start_url": "/",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
