@@ -1,7 +1,7 @@
 {
     "name": "Auction Fee Calculator",
     "short_name": "AuctionCalc",
-    "start_url": "/",
+    "start_url": "/Copart-fees-calculator",
     "display": "standalone",
     "icons": [
         {
